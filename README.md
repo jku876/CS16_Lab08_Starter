@@ -23,5 +23,5 @@ Functions (TODO)
 
 - **Recursively implement a binary search**
   - Given a sorted array in ascending order (where each element is unique), search for a target value and return its index
-  - The target value **is guaranteed** to exist in the array 
+    - The target value **is guaranteed** to exist in the array 
   - E.g. *arr* = *{1, 3, 5, 7, 10}*, *target* = *5* &rarr; return 2
