@@ -9,7 +9,7 @@ Functions (TODO)
   - Palindromes **are not** case-sensitive - disregard spaces as well
   - Examples
     - *Noel sees Leon* reads *noeL sees leoN* backwards, and as we disregard spaces and capitalization, it is a palindrome
-    - *HelloN* reads *olleH* and is not a palindrome
+    - *Hello* reads *olleH* and is not a palindrome
   
 - **Recursively determine if a linked list is acyclic**
   - A linked list is **acylic** if there does not exist a loop (that is, the next pointer of any node does not point to a previous node)
@@ -21,6 +21,7 @@ Functions (TODO)
   - E.g. *1 -> 2 -> 3 -> 4* becomes *4 -> 3 -> 2 -> 1* 
   - Return the head of the new linked list
 
-- **Merge K Sorted Linked Lists Recursively**
-  - Given an arbitrary number of *k* sorted linked lists, merge them all into one sorted linked list
-  - E.g. Given *1 -> 3 -> 5* and *2 -> 4 -> 6* as inputs, return the linked list *1 -> 2 -> 3 -> 4 -> 5 -> 6*
+- **Recursively implement a binary search**
+  - Given a sorted array in ascending order (where each element is unique), search for a target value and return its index
+  - The target value **is guaranteed** to exist in the array 
+  - E.g. *arr* = *{1, 3, 5, 7, 10}*, *target* = *5* &rarr; return 2
