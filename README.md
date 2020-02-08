@@ -21,7 +21,10 @@ Functions (TODO)
   - E.g. *1 -> 2 -> 3 -> 4* becomes *4 -> 3 -> 2 -> 1* 
   - Return the head of the new linked list
 
-- **Recursively implement a binary search**
-  - Given a sorted array in ascending order (where each element is unique), search for a target value and return its index
-    - The target value **is guaranteed** to exist in the array 
-  - E.g. *arr* = *{1, 3, 5, 7, 10}*, *target* = *5* &rarr; return 2
+- **Recursively implement a unique Two Sum**
+  - Given a linked list of integers and a target value, find the pair whose values sum to the target value, and return the later of the two Nodes (closer to the end)
+    - If more than one pair sum to the target value, find the last possible Node (closest to the end) which can satisfy this condition
+    - If no such pair exists in the linked list, find the pair of Nodes whose sum is the closest to the target value, and return the later of the two Nodes
+    - The linked list will have at least *two elements*
+  - E.g. *Linked List* = *1 -> 2 -> 3 -> 4 -> 5*, *target* = *6* &rarr; return *Node 5* 
+         *Linked List* = *1 -> 2 -> 3*, *target* = *0*  &rarr; return *Node 2* because 1 + 2 = 3, and that's the closest sum to *target*
