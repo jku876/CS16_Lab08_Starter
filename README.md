@@ -39,9 +39,9 @@ Functions (TODO)
   - Given two **non-empty** linked lists representing two non-negative integers, where each integer is stored in **reverse** order and each node represents a single digit, add the two numbers and return it as a linked list.
   - Examples
     - (2 -> 4 -> 3) + (5 -> 6 -> 4) 
-    - Output: 7 -> 0 -> 8
-    - Explanation: 342 + 465 = 807
+      - Output: 7 -> 0 -> 8
+      - Explanation: 342 + 465 = 807
     
     - (9 -> 9 -> 5) + (9 -> 5 -> 6)
-    - Output: 8 -> 5 -> 2 -> 1
-    - Explanation: 659 + 599 = 1258
+      - Output: 8 -> 5 -> 2 -> 1
+      - Explanation: 659 + 599 = 1258
