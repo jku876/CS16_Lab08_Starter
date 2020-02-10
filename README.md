@@ -4,23 +4,27 @@ All of these functions **must** be implemented recursively
 
 Functions (TODO)
 
-- **Recursively check if a string is a palindrome**
-  - A palindrome is a word or phrase that reads the same backwards & forwards 
-  - Palindromes **are not** case-sensitive - disregard spaces as well
-  - Examples
-    - *Noel sees Leon* reads *noeL sees leoN* backwards, and as we disregard spaces and capitalization, it is a palindrome
-    - *HelloN* reads *olleH* and is not a palindrome
+- **Recursively merge two linked lists**
+  - Given two linked lists, splice the two linked lists together
+    - Splice two linked lists by interweaving the nodes - the second linked list's nodes should be inserted at alternating positions into the first linked list
+    - If the size of the two linked lists differ, after successfully splicing, finish the combined linked list with the remaining elements of the larger linked list
+   - Examples
+      - Linked List 1: 1 &rarr; 2 &rarr; 3 &rarr; 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Linked List 2: 5 &rarr; 6 &rarr; 7 &rarr; 8 
+        - Output: 1 &rarr; 5 &rarr; 2 &rarr; 6 &rarr; 3 &rarr; 7 &rarr; 4 &rarr; 8
+
+      - Linked List 1: 1 &rarr; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Linked List 2: 3 &rarr; 4 &rarr; 5 &rarr; 6
+        - Output: 1 &rarr; 3 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 6 
+    
+    
+- **Recursively find the middle of the linked list**
+  - Find the middle node of a linked list, and return that node
+  - It is guaranteed that the linked list will contain an odd number of nodes
   
-- **Recursively determine if a linked list is acyclic**
-  - A linked list is **acylic** if there does not exist a loop (that is, the next pointer of any node does not point to a previous node)
-  - If no such cycle exists, return **true** - otherwise, return **false**
-  
-- **Recursively reverse a linked list**
-  - Given the head of a linked list, reverse the order of the nodes
-    - As clarification, this means the actual pointers of the nodes itself - simply modifying the values in the nodes **will not** work
-  - E.g. *1 -> 2 -> 3 -> 4* becomes *4 -> 3 -> 2 -> 1* 
+- **Recursively remove a target value from a linked list**
+  - Given a linked list and a value to delete, delete all nodes with that value from the linked list
+    - It is **not** guaranteed that the value exists in the linked list - thus, you may not need to remove anything at all
   - Return the head of the new linked list
 
-- **Merge K Sorted Linked Lists Recursively**
-  - Given an arbitrary number of *k* sorted linked lists, merge them all into one sorted linked list
-  - E.g. Given *1 -> 3 -> 5* and *2 -> 4 -> 6* as inputs, return the linked list *1 -> 2 -> 3 -> 4 -> 5 -> 6*
+- **Recursively delete k nodes from a linked list**
+  - Given the head of a linked list, delete the first k nodes from the linked list
+    - k will always be less than the length of the linked list
