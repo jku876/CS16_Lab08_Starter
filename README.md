@@ -44,4 +44,4 @@ Functions (TODO)
     
     - (9 -> 9 -> 5) + (9 -> 5 -> 6)
     - Output: 8 -> 5 -> 2 -> 1
-    - Explanation 659 + 599 = 1258
+    - Explanation: 659 + 599 = 1258
