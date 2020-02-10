@@ -28,3 +28,9 @@ Functions (TODO)
 - **Recursively delete k nodes from a linked list**
   - Given the head of a linked list, delete the first k nodes from the linked list
     - k will always be less than the length of the linked list
+- **Recursively find the sum of two linked lists**
+  - Given two head nodes, return the head of a new linked-list where each element is the sum of the corresponding element of the other two
+    - if one linked-list is shorter, fill the rest of the result with elements from the other (i.e., treat the non-existent nodes as a value of zero)
+    -Examples
+      - Linked List 1: 1 &rarr; 2 &rarr; 3 &rarr; 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Linked List 2: 5 &rarr; 6 &rarr; 7 
+        - Output: 6 &rarr; 8 &rarr; 10 &rarr; 4 
