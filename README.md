@@ -23,10 +23,5 @@ Functions (TODO)
 
 - **Recursively implement a unique Two Sum**
   - Given a linked list of integers and a target value, find the pair whose values sum to the target value, and return the later of the two Nodes (closer to the end)
-    - If more than one pair sum to the target value, find the last possible Node (closest to the end) which can satisfy this condition
-    - If no such pair exists in the linked list, find the pair of Nodes whose sum is the closest to the target value, and return the later of the two Nodes
-    - The linked list will have **at least two** elements
-  - Examples
-    - *Linked List* = *1 -> 2 -> 3 -> 4 -> 5*, *target* = *6* &rarr; return *Node 5* 
-    - *Linked List* = *1 -> 2 -> 3*, *target* = *0*  &rarr; return *Node 2* 
-      - *1 + 2 = 3*, and as that is the closest sum to *target*, return the later of the two Nodes
+    - The linked list will have **at least two** elements, and you can assume there exists exactly one pair of nodes that sum to the target value.
+    
