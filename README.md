@@ -23,5 +23,7 @@ Functions (TODO)
 
 - **Recursively implement a unique Two Sum**
   - Given a linked list of integers and a target value, find the pair whose values sum to the target value, and return the later of the two Nodes (closer to the end)
-    - The linked list will have **at least two** elements, and you can assume there exists exactly one pair of nodes that sum to the target value.
+    - The linked list will have **at least two** elements.
+    - Assume that there will always exist exactly one pair of nodes that sum to the target value.
+    - The pair of nodes which sum to the target value will always be distinct.
     
