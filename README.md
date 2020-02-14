@@ -16,25 +16,21 @@ Functions (TODO)
         - Output: 1 &rarr; 3 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 6 
     
     
-- **Recursively find the middle of the linked list**
-  - Find the middle node of a linked list, and return that node
-  - It is guaranteed that the linked list will contain an odd number of nodes
+
   
 - **Recursively remove a target value from a linked list**
   - Given a linked list and a value to delete, delete all nodes with that value from the linked list
     - It is **not** guaranteed that the value exists in the linked list - thus, you may not need to remove anything at all
   - Return the head of the new linked list
 
-- **Recursively delete k nodes from a linked list**
-  - Given the head of a linked list, delete the first k nodes from the linked list
-    - k will always be less than the length of the linked list
+
 - **Recursively find the sum of two linked lists**
   - Given two head nodes, return the head of a new linked-list where each element is the sum of the corresponding element of the other two
     - if one linked-list is shorter, fill the rest of the result with elements from the other (i.e., treat the non-existent nodes as a value of zero)
     -Examples
       - Linked List 1: 1 &rarr; 2 &rarr; 3 &rarr; 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Linked List 2: 5 &rarr; 6 &rarr; 7 
         - Output: 6 &rarr; 8 &rarr; 10 &rarr; 4 
-        
+-----------------------------------------------------------------------------------------------
 - **Recursively sum two linked lists**
   - Given two **non-empty** linked lists representing two non-negative integers, where each integer is stored in **reverse** order and each node represents a single digit, add the two numbers and return it as a linked list.
   - Examples
@@ -45,3 +41,11 @@ Functions (TODO)
     - (9 -> 9 -> 5) + (9 -> 5 -> 6)
       - Output: 8 -> 5 -> 2 -> 1
       - Explanation: 659 + 599 = 1258
+
+- **Recursively delete k nodes from a linked list**
+  - Given the head of a linked list, delete the first k nodes from the linked list
+    - k will always be less than the length of the linked list
+    
+- **Recursively find the middle of the linked list**
+  - Find the middle node of a linked list, and return that node
+  - It is guaranteed that the linked list will contain an odd number of nodes
