@@ -4,11 +4,14 @@
 struct Node {
     int data;
     Node* next;
-}
+};
 
 Node* merge(Node* head1, Node* head2);
 
-Node* removeTargetValue(int target);
+
+Node* removeTargetValue(Node* head, int target);
+
 
 Node* sum(Node* head1, Node* head2);
 
+#endif
