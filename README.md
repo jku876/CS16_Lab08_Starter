@@ -4,6 +4,13 @@ All of these functions **must** be implemented recursively
 
 Functions (TODO)
 
+- **Recursively check if a string is a palindrome**
+  - A palindrome is a word or phrase that reads the same backwards & forwards 
+  - Palindromes **are not** case-sensitive - disregard spaces as well
+  - Examples
+    - *Noel sees Leon* reads *noeL sees leoN* backwards, and as we disregard spaces and capitalization, it is a palindrome
+    - *HelloN* reads *olleH* and is not a palindrome
+
 - **Recursively merge two linked lists**
   - Given two linked lists, splice the two linked lists together
     - Splice two linked lists by interweaving the nodes - the second linked list's nodes should be inserted at alternating positions into the first linked list
