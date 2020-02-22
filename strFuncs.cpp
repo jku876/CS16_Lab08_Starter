@@ -1,7 +1,3 @@
-#include <iostream>
-#include <string>
-#include <cstring>
-#include <algorithm>
 #include "strFuncs.h"
 using namespace std;
 
