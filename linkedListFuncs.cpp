@@ -1,4 +1,7 @@
 #include "linkedListFuncs.h"
+#include <stddef.h>
+
+using namespace std;
 
 /*Given two linked lists, splice the two linked lists together, alternating elements from each one
  *All methods must be implemented recursively!*/
