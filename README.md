@@ -25,10 +25,10 @@ Functions (TODO)
     
 
   
-- **Recursively remove a target value from a linked list**
-  - Given a linked list and a value to delete, delete all nodes with that value from the linked list
-    - It is **not** guaranteed that the value exists in the linked list - thus, you may not need to remove anything at all
-  - Return the head of the new linked list
+- **Recursively delete k nodes from a linked list**
+  - Given the head of a linked list, delete the first k nodes from the linked list
+    - k will always be less than the length of the linked list
+    - Remember to properly deallocate memory when deleting nodes, your code will be tested for memory leaks
 
 
 - **Recursively find the sum of two linked lists**

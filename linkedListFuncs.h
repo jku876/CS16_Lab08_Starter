@@ -3,15 +3,15 @@
 
 struct Node {
     int data;
-    Node* next;
+    Node *next;
 };
 
-Node* merge(Node* head1, Node* head2);
+Node* splice(Node *head1, Node *head2);
 
 
-Node* removeTargetValue(Node* head, int target);
+Node* removeKFromFront(Node *head, int k);
 
 
-Node* sum(Node* head1, Node* head2);
+Node* sum(Node *head1, Node *head2);
 
 #endif
