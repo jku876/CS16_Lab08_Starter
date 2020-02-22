@@ -1,7 +1,9 @@
 #ifndef STRFUNCS_H
 #define STRFUNCS_H
-using namespace std;
 #include <string>
+
+using namespace std;
+
 
 bool isPalindrome(const string s1);
 
