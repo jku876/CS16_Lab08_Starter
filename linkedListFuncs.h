@@ -1,5 +1,6 @@
 #ifndef linkedListFuncs_H
 #define linkedListFuncs_H
+#include <stddef.h>
 
 struct Node {
     int data;
