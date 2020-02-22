@@ -1,5 +1,6 @@
 #include "strFuncs.h"
 using namespace std;
+#include <cctype>
 
 
 /* Precondition: s1 is a valid string that may contain upper or lower case alphabets, no spaces or special characters
@@ -9,7 +10,7 @@ bool isPalindrome(const string s1){
     if(s1.length() <= 1){
         return true;
     }
-    if(s1[0] != s1[s1.length()-1]){
+    if(tolower(s1[0]) != tolower(s1[s1.length()-1])){
         return false;
     }
     return isPalindrome(s1.substr(1,s1.length()-2));
