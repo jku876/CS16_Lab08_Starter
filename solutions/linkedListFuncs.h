@@ -9,7 +9,7 @@ struct Node {
 Node* merge(Node* head1, Node* head2);
 
 
-Node* removeTargetValue(Node* head, int target);
+Node* removeKFromFront(Node *head, int k);
 
 
 Node* sum(Node* head1, Node* head2);

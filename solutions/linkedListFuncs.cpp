@@ -2,7 +2,7 @@
 
 /*Given two linked lists, splice the two linked lists together, alternating elements from each one*/
 /*All methods must be implemented recursively!*/
-Node* merge(Node *head1, Node *head2) {
+Node* splice(Node *head1, Node *head2) {
     if(!head1){
         return head2;
     }
@@ -16,17 +16,16 @@ Node* merge(Node *head1, Node *head2) {
     return head1;
 }
 
-/*Given a head of a linked-list, delete all nodes containing this value*/
-/*All methods must be implemented recursively!*/
+/*Given the head of a linked list, delete the first k nodes from the linked list
+ *k will always be less than the length of the linked list
+ *All methods must be implemented recursively!*/
 Node* removeKFromFront(Node *head, int k) {
     if(k == 0) {
         return head;
     }
-
     Node *temp = head->next;
     delete head;
     return removeKFromFront(temp, k-1);
-
 }
 
 /*Given two linked lists, return a linked-list where each element is the sum of the corresponding elements of the input*/
