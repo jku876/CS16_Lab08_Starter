@@ -4,6 +4,14 @@
 using std::cout;
 using std::endl;
 
+std::string listToString(Node *head){
+  string s = "";
+  while(head){
+    s += to_string(head->data) + " ";
+    head = head->next;
+  }
+  return s;
+}
 
 void assertEquals(std::string expected, 
 		  std::string actual, 
