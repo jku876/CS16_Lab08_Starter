@@ -27,6 +27,17 @@ void assertEquals(Node* expected,
   }
 }
 
+void assertEquals(Node* expected, 
+		  vector<Node*> &v, 
+		  std::string message) {
+  if (expected==actual) {
+    cout << "PASSED: " << message << endl;;
+  } else {
+    cout << "   FAILED: " << message << endl 
+	 << "     Expected: " << expected << " Actual: " << actual << endl; 
+  }
+}
+
 void assertNotNull(Node* actual, 
 		   std::string message) {
   if (actual == 0) {
