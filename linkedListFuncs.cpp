@@ -4,10 +4,7 @@
 using namespace std;
 
 /*Given two linked lists, splice the two linked lists together, alternating elements from each one
- 
-
-/*Given two linked lists, splice the two linked lists together, alternating elements from each one*/
-/*All methods must be implemented recursively!*/
+ *All methods must be implemented recursively!*/
 Node* splice(Node *head1, Node *head2) {
     if(!head1){
         return head2;
@@ -18,7 +15,7 @@ Node* splice(Node *head1, Node *head2) {
     Node *n1 = head1->next;
     Node *n2 = head2->next;
     head1->next = head2;
-    head2->next = merge(n1,n2);
+    head2->next = splice(n1,n2);
     return head1;
 }
 
