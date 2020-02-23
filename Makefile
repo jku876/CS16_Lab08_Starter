@@ -1,14 +1,22 @@
 CXX = g++ -std=c++11
 CXXFLAGS = -Wall -Wno-uninitialized
-BINARIES = linkedListTest strTest
+BINARIES = removeKFromFrontTest strTest sumTest spliceTest
 
 all: ${BINARIES}
 
 tests: ${BINARIES}
-	./linkedListTest
+	./removeKFromFrontTest
+	./spliceTest
+	./sumTest
 	./strTest
 
-linkedListTest: linkedListTest.o linkedListFuncs.o tddFuncs.o
+removeKFromFrontTest: removeKFromFrontTest.o linkedListFuncs.o tddFuncs.o
+	$(CXX) $(CXXFLAGS)  $^ -o $@
+
+spliceTest: spliceTest.o linkedListFuncs.o tddFuncs.o
+	$(CXX) $(CXXFLAGS)  $^ -o $@
+
+sumTest: sumTest.o linkedListFuncs.o tddFuncs.o
 	$(CXX) $(CXXFLAGS)  $^ -o $@
 
 strTest: strTest.o strFuncs.o tddFuncs.o
