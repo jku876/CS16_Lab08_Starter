@@ -1,6 +1,6 @@
 #include "tddFuncs.h"
-
 #include <iostream>
+
 using std::cout;
 using std::endl;
 
@@ -27,14 +27,25 @@ void assertEquals(Node* expected,
   }
 }
 
-void assertEquals(Node* expected, 
-		  vector<Node*> &v, 
+void assertEquals(vector<Node*> &expected, 
+		  Node* actual, 
 		  std::string message) {
-  if (expected==actual) {
+  bool pass = true;
+  int i = 0;
+  while(actual){
+    if(i == expected.size() || actual != expected[i]){
+      pass = false;
+      break;
+    }
+    actual = actual->next;
+    i++;
+  }
+  if (pass && i == expected.size()) {
     cout << "PASSED: " << message << endl;;
   } else {
     cout << "   FAILED: " << message << endl 
-	 << "     Expected: " << expected << " Actual: " << actual << endl; 
+  << "     Expected: " << expected[i] << " Actual: " << actual << endl
+	<< "     Node " << i << " is linked improperly" << endl;
   }
 }
 

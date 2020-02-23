@@ -19,8 +19,8 @@ void assertEquals(Node* expected,
 		  Node* actual, 
 		  std::string message);
 
-void assertEquals(Node* expected, 
-		  vector<Node*> &v, 
+void assertEquals(vector<Node*> &expected, 
+		  Node* actual, 
 		  std::string message);
 
 #define ASSERT_EQUALS(expected,actual) assertEquals(expected,actual,#actual)

@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     //Tests the isPalindrome function
 	startTestGroup("CHECK_IF_A_STRING_IS_A_PALINDROME");
-	string p1 = "leonseesnoel"
+	string p1 = "leonseesnoel";
 	string p2 = "RaCecAr";
 	string p3 = "fail";
 	

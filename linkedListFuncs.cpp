@@ -1,10 +1,11 @@
+
 #include "linkedListFuncs.h"
 #include <stddef.h>
 
 using namespace std;
 
-/*Given two linked lists, splice the two linked lists together, alternating elements from each one
- *All methods must be implemented recursively!*/
+/*Given two linked lists, splice the two linked lists together, alternating elements from each one*/
+/*All methods must be implemented recursively!*/
 Node* splice(Node *head1, Node *head2) {
     if(!head1){
         return head2;
