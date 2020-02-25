@@ -6,12 +6,16 @@ struct Node {
     Node *next;
 };
 
-Node* splice(Node *head1, Node *head2);
+Node* findKthNode(Node *head, int k);
 
 
 Node* removeKFromFront(Node *head, int k);
 
 
 Node* sum(Node *head1, Node *head2);
+
+
+Node* splice(Node *head1, Node *head2);
+
 
 #endif
