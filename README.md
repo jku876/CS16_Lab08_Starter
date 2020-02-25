@@ -26,7 +26,7 @@ Functions (TODO)
   - Given a head node and integer k, return the address of the kth node
     -You do not know whether the linked-list contains k or more nodes; if k is greater than the length of the linked-list, return NULL
     - Example: 
-      - list:  &rarr; 2 &rarr; 3 &rarr; 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      - list:  2 &rarr; 3 &rarr; 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         - findKthNode(list, 1) = 2
         - findKthNode(list, 3) = 4
         - findKthNode(list, 4) = NULL
