@@ -1,8 +1,14 @@
 #ifndef TDDFUNCS_H
 #define TDDFUNCS_H
-#include "linkedList.h"
+
+#include "linkedListFuncs.h"
 
 #include <string>
+#include <vector>
+
+using namespace std;
+
+std::string listToString(Node *head);
 
 void assertEquals(std::string expected, 
 		  std::string actual, 
@@ -12,8 +18,12 @@ void assertEquals(int expected,
 		  int actual, 
 		  std::string message="");
 
-void assertEquals(Node* expected, 
-		  Node* actual, 
+void assertEquals(Node *expected, 
+		  Node *actual, 
+		  std::string message);
+
+void assertEquals(vector<Node*> &expected, 
+		  Node *actual, 
 		  std::string message);
 
 #define ASSERT_EQUALS(expected,actual) assertEquals(expected,actual,#actual)

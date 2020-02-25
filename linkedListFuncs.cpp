@@ -3,20 +3,18 @@
 
 using namespace std;
 
-/*Given two linked lists, splice the two linked lists together, alternating elements from each one*/
-/*All methods must be implemented recursively!*/
-Node* splice(Node *head1, Node *head2) {
-    if(!head1){
-        return head2;
+/*Given the head of a linked list, find and return the kth node of the linked list
+ *Assume head is the first node
+ *If k is larger than the size of the linked list, return NULL
+ *All methods must be implemented recursively!*/
+Node* findKthNode(Node *head, int k){
+    if(!head){
+        return NULL;
     }
-    if(!head2){
-        return head1;
+    if(k==1){
+        return head;
     }
-    Node *n1 = head1->next;
-    Node *n2 = head2->next;
-    head1->next = head2;
-    head2->next = splice(n1,n2);
-    return head1;
+    return findKthNode(head->next,k-1);
 }
 
 /*Given the head of a linked list, delete the first k nodes from the linked list
@@ -50,4 +48,20 @@ Node* sum(Node *head1, Node *head2) {
         n1->next = sum(head1->next, head2->next);
     }
     return n1;
+}
+
+/*Given two linked lists, splice the two linked lists together, alternating elements from each one*/
+/*All methods must be implemented recursively!*/
+Node* splice(Node *head1, Node *head2) {
+    if(!head1){
+        return head2;
+    }
+    if(!head2){
+        return head1;
+    }
+    Node *n1 = head1->next;
+    Node *n2 = head2->next;
+    head1->next = head2;
+    head2->next = splice(n1,n2);
+    return head1;
 }
