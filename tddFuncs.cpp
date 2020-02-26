@@ -35,20 +35,21 @@ void assertEquals(Node* expected,
   }
 }
 
-void assertEquals(vector<Node*> &expected, 
-		  Node* actual, 
+void assertEquals(Node **expected, 
+      int size, 
+		  Node *actual, 
 		  std::string message) {
   bool pass = true;
   int i = 0;
   while(actual){
-    if(i == expected.size() || actual != expected[i]){
+    if(i == size || actual != expected[i]){
       pass = false;
       break;
     }
     actual = actual->next;
     i++;
   }
-  if (pass && i == expected.size()) {
+  if (pass && i == size) {
     cout << "PASSED: " << message << endl;;
   } else {
     cout << "   FAILED: " << message << endl 

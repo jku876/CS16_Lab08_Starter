@@ -11,18 +11,7 @@ int main() {
     Node e4 = {4, NULL};
     Node e3 = {3, &e4};
 
-    vector<Node*> v1{&e1, &e3, &e2, &e4}; 
+    Node *n1[] = {&e1, &e3, &e2, &e4}; 
     Node *h = splice(&e1, &e3);
-    assertEquals(v1, h, "Equal length");
-
-    Node e6 = {6, NULL};
-    Node e5 = {5, &e6};
-
-    vector<Node*> v2{&e5, &e6};
-    h = splice(NULL, &e5);
-    assertEquals(v2, h, "Non-empty and empty");
-
-    vector<Node*> v3{&e1, &e5, &e3, &e6, &e2, &e4};
-    h = splice(&e1, &e5);
-    assertEquals(v3, h, "Different length");
+    assertEquals(n1, 4, h, "Equal length");
 }

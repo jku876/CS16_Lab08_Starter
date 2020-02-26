@@ -21,7 +21,8 @@ void assertEquals(Node *expected,
 		  Node *actual, 
 		  std::string message);
 
-void assertEquals(vector<Node*> &expected, 
+void assertEquals(Node **expected, 
+		  int size,
 		  Node *actual, 
 		  std::string message);
 
