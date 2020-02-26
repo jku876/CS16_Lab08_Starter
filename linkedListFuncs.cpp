@@ -43,7 +43,6 @@ Node* sum(Node *head1, Node *head2) {
         n1->data = head1->data;
         n1->next = sum(head1->next, NULL);
     }else{
-        Node *n1 = new Node; 
         n1->data = head1->data + head2->data;
         n1->next = sum(head1->next, head2->next);
     }
