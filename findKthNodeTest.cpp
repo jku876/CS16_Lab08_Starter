@@ -12,6 +12,4 @@ int main() {
 
     assertEquals(findKthNode(&e4,1), &e4, "1st node of 1->2->3");
     assertEquals(findKthNode(&e4, 3), &e6, "3rd node of 1->2->3");
-    assertEquals(findKthNode(&e4, 4), NULL, "k > linked list length");
-    assertEquals(findKthNode(NULL, 100), NULL, "null linked list");
 }
