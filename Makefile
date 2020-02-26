@@ -1,14 +1,18 @@
 CXX = g++ -std=c++11
 CXXFLAGS = -Wall -Wno-uninitialized
-BINARIES = removeKFromFrontTest strTest sumTest spliceTest
+BINARIES = removeKFromFrontTest strTest sumTest spliceTest findKthNodeTest
 
 all: ${BINARIES}
 
 tests: ${BINARIES}
+	./findKthNodeTest
 	./removeKFromFrontTest
 	./spliceTest
 	./sumTest
 	./strTest
+
+findKthNodeTest: findKthNodeTest.o linkedListFuncs.o tddFuncs.o
+	$(CXX) $(CXXFLAGS)  $^ -o $@
 
 removeKFromFrontTest: removeKFromFrontTest.o linkedListFuncs.o tddFuncs.o
 	$(CXX) $(CXXFLAGS)  $^ -o $@
