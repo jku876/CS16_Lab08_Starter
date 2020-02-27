@@ -22,7 +22,7 @@ int main() {
     Node *h = splice(&e1, &e3);
 
     /*Tests the outputs are what they should be; we iterate through the spliced linked list and verify
-    *that each address corresponds to what it should in n1
+    * that each address corresponds to what it should in n1
     */
     assertEquals(n1, 4, h, "Equal length");
 }

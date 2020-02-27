@@ -15,11 +15,12 @@ int main() {
     Node n5 = {5, &n6};
     Node n4 = {4, &n5}; 
 
-    //Expected result as a linked list
+    //Expected result as a linked list after calling your function
     Node n9 = {9, NULL};
     Node n8 = {7, &n9};
     Node n7 = {5, &n8};
 
+    //Calls your function
     Node *h1 = sum(&n1, &n4);
     //Converts lists to strings and checks that the strings are equal
     assertEquals( listToString(&n7), listToString(h1), "1->2->3, 4->5->6");
