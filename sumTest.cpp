@@ -5,6 +5,8 @@ using namespace std;
 
 int main() {
     startTestGroup("SUM_OF_TWO_LINKED_LISTS");
+    
+    //Initializes linked list n1 -> n2 -> n3
     Node n3 = {3, NULL};
     Node n2 = {2, &n3};
     Node n1 = {1, &n2};
@@ -13,11 +15,13 @@ int main() {
     Node n5 = {5, &n6};
     Node n4 = {4, &n5}; 
 
+    //Expected result as a linked list
     Node n9 = {9, NULL};
     Node n8 = {7, &n9};
     Node n7 = {5, &n8};
 
     Node *h1 = sum(&n1, &n4);
+    //Converts lists to strings and checks that the strings are equal
     assertEquals( listToString(&n7), listToString(h1), "1->2->3, 4->5->6");
 
     n3.next = &n4;
