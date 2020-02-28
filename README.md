@@ -98,7 +98,7 @@ In strFuncs.cpp:
 In linkedListFuncs.cpp:
 - **Recursively delete k nodes from a linked list**
   - Given the head of a linked list, delete the first k nodes from the linked list
-    - k will always be less than the length of the linked list
+    - k will always be less than or equal to the length of the linked list
 
 - **Recursively find the sum of two linked lists**
   - Given two head nodes, return the head of a new linked-list where each element is the sum of the corresponding element of the other two
