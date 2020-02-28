@@ -164,10 +164,10 @@ The *splice* function is a bonus question - note that it is intended to be diffi
 
 <table border="1">
 <tr><th>Test Name</th><th>Value</th></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">isPalindrome</p></td><td>(10 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">findKthNode</p></td><td>(10 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">removeKFromFront</p></td><td>(10 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(20 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">isPalindrome</p></td><td>(20 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">findKthNode</p></td><td>(20 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">removeKFromFront</p></td><td>(20 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(30 pts)</td></tr>
 <tr><td><p style="color:green;margin:0;padding:0;">splice</p></td><td>(20 pts - BONUS)</td></tr>
 </table>
 
