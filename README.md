@@ -174,7 +174,7 @@ The *splice* function is a bonus question - note that it is intended to be diffi
 ## Code inspection human-assigned points
 
 * (90 pts) Used recursion to implement every function.
-* (20 pts) Bonus Question
+* (50 pts) Bonus Question
 * (10 pts) Code style, including but not limited to:
 1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
 2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
