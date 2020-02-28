@@ -158,7 +158,7 @@ Submit the strFuncs.cpp and linkedListFuncs.cpp files on gradescope. Make sure t
 
 Most of the points will be awarded based on gradescope automatic grading. Other points will be assigned after visual code inspection by TAs - if a function is not implemented recursively, you will receive **NOT** receive any credit for that function at all.
 
-The *splice* function is a bonus question - note that it is intended to be difficult. Although Gradescope will be display a score out of 120, your lab is only worth 100 points - should you successfully complete the bonus, you will receive 120/100. We will manually adjust the grades afterwards.
+The *splice* function is a bonus question - note that it is intended to be difficult. Although Gradescope will be display a score out of 150, your lab is only worth 100 points - should you successfully complete the bonus, you will receive 150/100. We will manually adjust the grades afterwards.
 
 ## Gradescope automatic points
 
