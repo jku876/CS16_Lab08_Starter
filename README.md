@@ -99,6 +99,7 @@ In linkedListFuncs.cpp:
 - **Recursively delete k nodes from a linked list**
   - Given the head of a linked list, delete the first k nodes from the linked list
     - k will always be less than or equal to the length of the linked list
+    - Return NULL if there are no nodes left after deleting.
 
 - **Recursively find the sum of two linked lists**
   - Given two head nodes, return the head of a new linked-list where each element is the sum of the corresponding element of the other two
@@ -117,7 +118,7 @@ In linkedListFuncs.cpp:
         - findKthNode(list, 4) = NULL
 
 
-- **BONUS: Recursively merge two linked lists**
+- **BONUS: Recursively splice together two linked lists**
   - This is a bonus problem; doing it is optional
   - Given two linked lists, splice the two linked lists together
     - Splice two linked lists by interweaving the nodes - the second linked list's nodes should be inserted at alternating positions into the first linked list
@@ -128,7 +129,9 @@ In linkedListFuncs.cpp:
 
       - Linked List 1: 1 &rarr; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Linked List 2: 3 &rarr; 4 &rarr; 5 &rarr; 6
         - Output: 1 &rarr; 3 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 6 
-
+        
+  - You CANNOT create another linked list - doing so will fail both the local tests and Gradescope tests. Instead, splice the lists together by rearranging the *next* pointers of each linked list. You are allowed to declare additional nodes, but the returned linked list should only contain nodes from each linked list, in some order. 
+  
 Each one has a set of tests which can be found under its corresponding heading when you type <code>make tests</code>. For example, the addIntToEndOfList tests look like this to start: 
 
 ```
@@ -153,7 +156,9 @@ Submit the strFuncs.cpp and linkedListFuncs.cpp files on gradescope. Make sure t
 
 # Grading Rubric
 
-Most of the points will be awarded based on gradescope automatic grading. Other points will be assigned after visual code inspection by TAs.
+Most of the points will be awarded based on gradescope automatic grading. Other points will be assigned after visual code inspection by TAs - if a function is not implemented recursively, you will receive **NOT** receive any credit for that function at all.
+
+The *splice* function is a bonus question - note that it is intended to be difficult. Although Gradescope will be display a score out of 120, your lab is only worth 100 points - should you successfully complete the bonus, you will receive 120/100. We will manually adjust the grades afterwards.
 
 ## Gradescope automatic points
 
@@ -163,12 +168,13 @@ Most of the points will be awarded based on gradescope automatic grading. Other 
 <tr><td><p style="color:green;margin:0;padding:0;">findKthNode</p></td><td>(10 pts)</td></tr>
 <tr><td><p style="color:green;margin:0;padding:0;">removeKFromFront</p></td><td>(10 pts)</td></tr>
 <tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(20 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">splice</p></td><td>(0 pts - BONUS)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">splice</p></td><td>(20 pts - BONUS)</td></tr>
 </table>
 
 ## Code inspection human-assigned points
 
-* (40 pts) Used recursion to implement every function.
+* (90 pts) Used recursion to implement every function.
+* (20 pts) Bonus Question
 * (10 pts) Code style, including but not limited to:
 1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
 2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
