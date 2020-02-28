@@ -168,7 +168,7 @@ The *splice* function is a bonus question - note that it is intended to be diffi
 <tr><td><p style="color:green;margin:0;padding:0;">findKthNode</p></td><td>(20 pts)</td></tr>
 <tr><td><p style="color:green;margin:0;padding:0;">removeKFromFront</p></td><td>(20 pts)</td></tr>
 <tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(30 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">splice</p></td><td>(20 pts - BONUS)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">splice</p></td><td>(50 pts - BONUS)</td></tr>
 </table>
 
 ## Code inspection human-assigned points
