@@ -158,23 +158,23 @@ Submit the strFuncs.cpp and linkedListFuncs.cpp files on gradescope. Make sure t
 
 Most of the points will be awarded based on gradescope automatic grading. Other points will be assigned after visual code inspection by TAs - if a function is not implemented recursively, you will receive **NOT** receive any credit for that function at all.
 
-The *splice* function is a bonus question - note that it is intended to be difficult. Although Gradescope will be display a score out of 150, your lab is only worth 100 points - should you successfully complete the bonus, you will receive 150/100. We will manually adjust the grades afterwards.
+The *splice* function is a bonus question - note that it is intended to be difficult. Although Gradescope will be display a score out of 110, your lab is only worth 100 points - should you successfully complete the bonus, you will receive 110/100. We will manually adjust the grades afterwards.
 
 ## Gradescope automatic points
 
 <table border="1">
 <tr><th>Test Name</th><th>Value</th></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">isPalindrome</p></td><td>(20 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">findKthNode</p></td><td>(20 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">removeKFromFront</p></td><td>(20 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(30 pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">splice</p></td><td>(50 pts - BONUS)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">isPalindrome</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">findKthNode</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">removeKFromFront</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(20 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">splice</p></td><td>(10 pts - BONUS)</td></tr>
 </table>
 
 ## Code inspection human-assigned points
 
-* (90 pts) Used recursion to implement every function.
-* (50 pts) Bonus Question
+* (40 pts) Used recursion to implement every function.
+* (10 pts) Bonus Question
 * (10 pts) Code style, including but not limited to:
 1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
 2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
